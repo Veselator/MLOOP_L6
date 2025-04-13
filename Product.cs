@@ -8,6 +8,18 @@
         protected double pricePerProduct;
         protected int quantity;
         protected string? country;
+        protected string? manufacturerName;
+
+        public string? ManufacturerName
+        {
+            get { return manufacturerName; }
+            set
+            {
+                if (value == null) return;
+                if (value.Length > 70) return;
+                manufacturerName = value;
+            }
+        }
 
         public string? Title
         {

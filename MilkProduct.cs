@@ -2,22 +2,10 @@
 {
     public class MilkProduct : FoodProduct
     {
-        private string? manufacturerName;
         private float percentageOfMilk;
         private bool isLactoseFree;
         private string? milkType;
         private float fatContent;
-
-        public string? ManufacturerName
-        {
-            get { return manufacturerName; }
-            set
-            {
-                if (value == null) return;
-                if (value.Length > 70) return;
-                manufacturerName = value;
-            }
-        }
 
         public float PercentageOfMilk
         {

@@ -35,7 +35,7 @@
             this.caloriesPerServing = caloriesPerServing;
         }
 
-        public override double CalculateTotalPrice() => pricePerProduct * quantity * (isOrganic ? 1.2 : 1.0);
+        public override double CalculateTotalPrice() => pricePerProduct * quantity * (isOrganic ? 1.2 : 1.0); // Якщо без ГМО, то дорожче
 
         public override void UpdateExpiryDate(int days)
         {
